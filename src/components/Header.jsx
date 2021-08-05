@@ -2,7 +2,6 @@ import React from 'react';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
-  Button,
   Fade,
   Flex,
   HStack,
@@ -11,49 +10,45 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-import { ReactComponent as SunnySideLogo } from '../assets/sunnyside-logo.svg';
-
-const NavLink = ({ children }) => (
-  <Link href="#" textAlign="center" color="neutral.blue.300" fontWeight="bold">
-    {children}
-  </Link>
-);
+import { Links } from '../utils/Links';
+import SunnySideLogo from '../assets/svg/SunnySideLogo';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const Links = [
-    'About',
-    'Services',
-    'Projects',
-    <Button
-      size="lg"
-      rounded="3xl"
-      px="8"
-      bg={{ base: 'primary.yellow', md: 'white' }}
-      fontFamily="heading"
-      color="black"
+
+  const NavLink = ({ children }) => (
+    <Link
+      href="#"
+      textAlign="center"
+      color="neutral.blue.300"
+      fontWeight="bold"
+      onClick={isOpen ? onClose : onOpen}
     >
-      Contact
-    </Button>,
-  ];
+      {children}
+    </Link>
+  );
 
   return (
-    <>
+    <Box
+      pos={{ base: 'fixed', md: 'inherit' }}
+      top="0"
+      w="100%"
+      zIndex="dropdown"
+    >
       <Flex
-        h={16}
         alignItems={'center'}
         justifyContent={'space-between'}
         bg={'primary.blue'}
         px={{ base: 4, md: 8, lg: 10 }}
-        py={{ base: 10, lg: 16 }}
+        py={{ base: 4, md: 8, lg: 10 }}
       >
         <Link w={{ base: '130px', md: '170px' }} href="#">
-          <SunnySideLogo />
+          <SunnySideLogo color="white" />
         </Link>
 
         <HStack as={'nav'} spacing={8} display={{ base: 'none', md: 'flex' }}>
           {Links.map(link => (
-            <Link key={link} color={'white'}>
+            <Link key={link + Math.random()} color={'white'}>
               {link}
             </Link>
           ))}
@@ -82,18 +77,19 @@ const Header = () => {
               w="25px"
               h="25px"
               bgGradient="linear(to-br, transparent 0%, transparent 50%, white 50%, white 100%)"
+              display={{ md: 'none' }}
             />
             <Box bg={'white'} p={10} display={{ md: 'none' }} w="64">
               <VStack as="nav" spacing="6">
                 {Links.map(link => (
-                  <NavLink key={link}>{link}</NavLink>
+                  <NavLink key={link + Math.random()}>{link}</NavLink>
                 ))}
               </VStack>
             </Box>
           </Flex>
         </Fade>
       ) : null}
-    </>
+    </Box>
   );
 };
 
