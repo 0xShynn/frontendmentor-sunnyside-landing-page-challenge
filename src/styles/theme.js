@@ -6,7 +6,7 @@ const customTheme = extendTheme({
       // styles for the `body`
       body: {
         fontSize: '18px',
-        bg: 'primary.blue',
+        bg: 'primary.sunnyGreen.100',
       },
     },
   },
@@ -22,6 +22,11 @@ const customTheme = extendTheme({
       darkDesCyan: 'hsl(167, 40%, 24%)',
       darkBlue: 'hsl(198, 62%, 26%)',
       darkModCyan: 'hsl(168, 34%, 41%)',
+      sunnyGreen: {
+        100: '#90D4C5',
+        200: '#529687',
+        300: '#2D7565',
+      },
     },
     neutral: {
       'blue.100': 'hsl(212, 27%, 19%)',
