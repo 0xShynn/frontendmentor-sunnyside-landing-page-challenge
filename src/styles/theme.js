@@ -6,11 +6,17 @@ const customTheme = extendTheme({
       // styles for the `body`
       body: {
         fontSize: '18px',
+        bg: 'primary.blue',
       },
     },
   },
+  fonts: {
+    heading: 'Fraunces',
+    body: 'Barlow',
+  },
   colors: {
     primary: {
+      blue: '#3EBFFF',
       softRed: 'hsl(7, 99%, 70%)',
       yellow: 'hsl(51, 100%, 49%)',
       darkDesCyan: 'hsl(167, 40%, 24%)',
