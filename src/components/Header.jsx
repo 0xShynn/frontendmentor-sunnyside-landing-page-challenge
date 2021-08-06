@@ -65,22 +65,20 @@ const Header = () => {
       </Flex>
       {isOpen ? (
         <Fade in={isOpen} offsetY={'20px'}>
-          <Flex
-            mx={4}
-            direction={'column'}
-            align={'flex-end'}
-            mt={'0'}
-            pos={'absolute'}
-            right={0}
-          >
+          <Flex direction={'column'} align={'flex-end'} mx="4">
             <Box
               w="25px"
               h="25px"
               bgGradient="linear(to-br, transparent 0%, transparent 50%, white 50%, white 100%)"
               display={{ md: 'none' }}
             />
-            <Box bg={'white'} p={10} display={{ md: 'none' }} w="64">
-              <VStack as="nav" spacing="6">
+            <Box
+              bg={'white'}
+              p={10}
+              display={{ md: 'none' }}
+              w={['full', '80']}
+            >
+              <VStack as="nav" spacing="6" bg="white">
                 {Links.map(link => (
                   <NavLink key={link + Math.random()}>{link}</NavLink>
                 ))}
