@@ -10,7 +10,7 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-import { Links } from '../utils/Links';
+import { NavLinks } from '../utils/NavLinks';
 import SunnySideLogo from '../assets/svg/SunnySideLogo';
 
 const Header = () => {
@@ -48,7 +48,7 @@ const Header = () => {
         </Link>
 
         <HStack as={'nav'} spacing={8} display={{ base: 'none', md: 'flex' }}>
-          {Links.map(link => (
+          {NavLinks.map(link => (
             <Link key={link + Math.random()} color={'white'}>
               {link}
             </Link>
@@ -81,7 +81,7 @@ const Header = () => {
               boxShadow="2xl"
             >
               <VStack as="nav" spacing="6">
-                {Links.map(link => (
+                {NavLinks.map(link => (
                   <NavLink key={link + Math.random()}>{link}</NavLink>
                 ))}
               </VStack>

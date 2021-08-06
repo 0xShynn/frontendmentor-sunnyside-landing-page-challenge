@@ -1,7 +1,7 @@
 import { Flex, HStack, Link, Icon } from '@chakra-ui/react';
 import React from 'react';
 import SunnySideLogo from '../assets/svg/SunnySideLogo';
-import { Links } from '../utils/Links';
+import { NavLinks } from '../utils/NavLinks';
 import {
   IoLogoFacebook,
   IoLogoTwitter,
@@ -24,7 +24,7 @@ const Footer = () => {
       </Link>
 
       <HStack spacing="12" as="nav">
-        {Links.slice(0, Links.length - 1).map(link => (
+        {NavLinks.slice(0, NavLinks.length - 1).map(link => (
           <Link
             color="primary.sunnyGreen.200"
             _hover={{ color: 'white' }}

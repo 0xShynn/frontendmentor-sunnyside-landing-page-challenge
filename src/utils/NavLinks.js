@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/react';
 
-export const Links = [
+export const NavLinks = [
   'About',
   'Services',
   'Projects',
