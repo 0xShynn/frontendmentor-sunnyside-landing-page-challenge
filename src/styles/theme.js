@@ -19,13 +19,15 @@ const customTheme = extendTheme({
       blue: '#3EBFFF',
       softRed: 'hsl(7, 99%, 70%)',
       yellow: 'hsl(51, 100%, 49%)',
-      darkDesCyan: 'hsl(167, 40%, 24%)',
       darkBlue: 'hsl(198, 62%, 26%)',
-      darkModCyan: 'hsl(168, 34%, 41%)',
       sunnyGreen: {
         100: '#90D4C5',
         200: '#529687',
         300: '#2D7565',
+        400: 'hsl(167, 40%, 24%)',
+      },
+      sunnyBlue: {
+        100: '#25596E',
       },
     },
     neutral: {

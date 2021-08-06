@@ -5,6 +5,7 @@ import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import ClientTestimonialsContainer from '../components/ClientTestimonialsContainer';
 import { Box } from '@chakra-ui/react';
+import MainContainer from '../components/MainContainer';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header />
       <Box role="main">
         <Hero />
+        <MainContainer />
         <ClientTestimonialsContainer />
         <ImageGallery />
       </Box>
