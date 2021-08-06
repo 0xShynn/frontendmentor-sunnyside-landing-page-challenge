@@ -24,6 +24,7 @@ const PanelVisual = ({ title, imageMobile, imageDesktop, text }) => {
           }
           as="h3"
           fontSize="3xl"
+          fontWeight="black"
           mb="6"
         >
           {title}
