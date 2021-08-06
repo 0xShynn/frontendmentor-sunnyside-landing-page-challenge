@@ -23,7 +23,13 @@ const Hero = () => {
       bgPosition="bottom"
       bgRepeat="no-repeat"
       bgSize="cover"
-      height={{ base: '500px', sm: '600px', md: '600px', lg: '600px' }}
+      height={{
+        base: '500px',
+        sm: '600px',
+        md: '600px',
+        lg: '600px',
+        xl: '750px',
+      }}
       pt={{ base: '140px', md: '40px' }}
       flexDirection="column"
       align="center"
