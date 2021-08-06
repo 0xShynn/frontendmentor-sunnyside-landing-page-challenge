@@ -4,14 +4,17 @@ import Hero from '../components/Hero';
 import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import ClientTestimonialsContainer from '../components/ClientTestimonialsContainer';
+import { Box } from '@chakra-ui/react';
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <ClientTestimonialsContainer />
-      <ImageGallery />
+      <Box role="main">
+        <Hero />
+        <ClientTestimonialsContainer />
+        <ImageGallery />
+      </Box>
       <Footer />
     </>
   );

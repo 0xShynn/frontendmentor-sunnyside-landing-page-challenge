@@ -34,6 +34,7 @@ const Header = () => {
       top="0"
       w="100%"
       zIndex="dropdown"
+      role="banner"
     >
       <Flex
         alignItems={'center'}
