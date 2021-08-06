@@ -1,4 +1,4 @@
-import { Box, Heading, VStack } from '@chakra-ui/react';
+import { Box, Heading, Stack, VStack } from '@chakra-ui/react';
 import React from 'react';
 import ClientTestimonial from './ClientTestimonial';
 
@@ -8,19 +8,23 @@ import userJennie from '../assets/images/users/image-jennie.jpg';
 
 const ClientTestimonialsContainer = ({ children }) => {
   return (
-    <Box bg="white" px="6" py="14">
+    <Box bg="white" px="6" py={{ base: '14', lg: '40' }}>
       <Heading
         as="h2"
         textAlign="center"
         color="neutral.blue.400"
         textTransform="uppercase"
-        fontSize="md"
+        fontSize={{ base: 'md', lg: 'xl' }}
         letterSpacing="widest"
-        mb="8"
+        mb={{ base: '8', lg: '0' }}
       >
         Client Testimonials
       </Heading>
-      <VStack spacing="0">
+      <Stack
+        direction={{ base: 'column', lg: 'row' }}
+        spacing="0"
+        justifyContent="center"
+      >
         <ClientTestimonial
           userImage={userEmily}
           name="Emily R."
@@ -42,7 +46,7 @@ const ClientTestimonialsContainer = ({ children }) => {
           review="We put our trust in Sunnyside and they delivered, making sur our needs
         were met and deadlines were always hit."
         />
-      </VStack>
+      </Stack>
     </Box>
   );
 };
