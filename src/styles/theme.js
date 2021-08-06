@@ -1,6 +1,9 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const customTheme = extendTheme({
+  breakpoints: {
+    '2xl': '96em',
+  },
   styles: {
     global: {
       // styles for the `body`

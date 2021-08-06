@@ -7,7 +7,7 @@ const PanelVisual = ({ title, imageMobile, imageDesktop, text }) => {
       bgImage={{ base: imageMobile, sm: imageDesktop }}
       bgPos="top"
       bgSize="cover"
-      h={{ base: '600px', sm: '600px' }}
+      h={{ base: '600px', sm: '600px', '2xl': '700px' }}
       align="flex-end"
       justify="center"
       px="6"
