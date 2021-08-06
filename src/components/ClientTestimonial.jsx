@@ -25,7 +25,7 @@ const ClientTestimonial = ({ userImage, name, job, review }) => {
         >
           {review}
         </Text>
-        <Heading as="h3" fontSize="lg" mb="2">
+        <Heading as="h3" fontSize="lg" mb="2" color="neutral.blue.100">
           {name}
         </Heading>
         <Heading
