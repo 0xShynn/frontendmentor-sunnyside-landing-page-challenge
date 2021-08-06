@@ -24,7 +24,7 @@ const Footer = () => {
       </Link>
 
       <HStack spacing="12" as="nav">
-        {NavLinks.slice(0, NavLinks.length - 1).map(link => (
+        {NavLinks.map(link => (
           <Link
             color="primary.sunnyGreen.200"
             _hover={{ color: 'white' }}

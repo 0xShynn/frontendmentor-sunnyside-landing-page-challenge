@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { NavLinks } from '../utils/NavLinks';
 import SunnySideLogo from '../assets/svg/SunnySideLogo';
+import ContactButton from './ContactButton';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -47,12 +48,22 @@ const Header = () => {
           <SunnySideLogo color="white" />
         </Link>
 
-        <HStack as={'nav'} spacing={8} display={{ base: 'none', md: 'flex' }}>
+        <HStack as={'nav'} spacing={2} display={{ base: 'none', md: 'flex' }}>
           {NavLinks.map(link => (
-            <Link key={link + Math.random()} color={'white'}>
+            <Link
+              href="#"
+              key={link + Math.random()}
+              color={'white'}
+              bg="none"
+              px="6"
+              py="2"
+              borderRadius="3xl"
+              _hover={{ textDecoration: 'none', bg: 'rgba(255, 255, 255, .3)' }}
+            >
               {link}
             </Link>
           ))}
+          <ContactButton title="Contact" url="#" />,
         </HStack>
 
         <IconButton
@@ -84,6 +95,11 @@ const Header = () => {
                 {NavLinks.map(link => (
                   <NavLink key={link + Math.random()}>{link}</NavLink>
                 ))}
+                <ContactButton
+                  title="Contact"
+                  url="#"
+                  onClick={isOpen ? onClose : onOpen}
+                />
               </VStack>
             </Box>
           </Flex>

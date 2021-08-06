@@ -23,17 +23,11 @@ const Panel = ({ title, description, url, urlColor }) => {
           fontWeight="black"
           color="neutral.blue.100"
           maxW={{ base: null, lg: '300px' }}
-          // px={{ base: '8px', lg: '0' }}
         >
           {title}
         </Heading>
 
-        <Text
-          color="neutral.blue.300"
-          mb="10"
-          lineHeight="tall"
-          // px={{ base: '8px', lg: '0' }}
-        >
+        <Text color="neutral.blue.300" mb="10" lineHeight="tall">
           {description}
         </Text>
 
