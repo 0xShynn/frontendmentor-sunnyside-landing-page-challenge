@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, VStack } from '@chakra-ui/react';
+import { Box, Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
 import ClientTestimonial from './ClientTestimonial';
 
@@ -6,7 +6,7 @@ import userEmily from '../assets/images/users/image-emily.jpg';
 import userThomas from '../assets/images/users/image-thomas.jpg';
 import userJennie from '../assets/images/users/image-jennie.jpg';
 
-const ClientTestimonialsContainer = ({ children }) => {
+const ClientTestimonialsContainer = () => {
   return (
     <Box bg="white" px="6" py={{ base: '14', lg: '40' }}>
       <Heading
