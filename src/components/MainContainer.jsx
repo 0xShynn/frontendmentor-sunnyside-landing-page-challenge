@@ -28,6 +28,7 @@ const MainContainer = () => {
           title="Transform your brand"
           description="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
           url="#"
+          urlColor="primary.yellow"
         />
       </Stack>
 
@@ -42,6 +43,7 @@ const MainContainer = () => {
         videographers and copywriters. We'll build and extend your brand in
         digital places."
           url="#"
+          urlColor="primary.softRed"
         />
       </Stack>
 

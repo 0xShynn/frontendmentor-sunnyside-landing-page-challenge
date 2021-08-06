@@ -11,6 +11,11 @@ const customTheme = extendTheme({
         fontSize: '18px',
         bg: 'primary.sunnyGreen.100',
       },
+      a: {
+        _hover: {
+          textDecoration: 'none',
+        },
+      },
     },
   },
   fonts: {
@@ -22,7 +27,6 @@ const customTheme = extendTheme({
       blue: '#3EBFFF',
       softRed: 'hsl(7, 99%, 70%)',
       yellow: 'hsl(51, 100%, 49%)',
-      darkBlue: 'hsl(198, 62%, 26%)',
       sunnyGreen: {
         100: '#90D4C5',
         200: '#529687',
