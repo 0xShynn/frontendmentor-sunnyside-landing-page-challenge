@@ -77,8 +77,9 @@ const Header = () => {
               p={10}
               display={{ md: 'none' }}
               w={['full', '80']}
+              boxShadow="2xl"
             >
-              <VStack as="nav" spacing="6" bg="white">
+              <VStack as="nav" spacing="6">
                 {Links.map(link => (
                   <NavLink key={link + Math.random()}>{link}</NavLink>
                 ))}

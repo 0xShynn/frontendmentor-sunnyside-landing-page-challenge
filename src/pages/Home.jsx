@@ -4,7 +4,6 @@ import Hero from '../components/Hero';
 import ImageGallery from '../components/ImageGallery';
 import Footer from '../components/Footer';
 import ClientTestimonialsContainer from '../components/ClientTestimonialsContainer';
-import ClientTestimonial from '../components/ClientTestimonial';
 
 const Home = () => {
   return (
