@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Link, Icon } from '@chakra-ui/react';
+import { Flex, HStack, Link, Icon } from '@chakra-ui/react';
 import React from 'react';
 import SunnySideLogo from '../assets/svg/SunnySideLogo';
 import { Links } from '../utils/Links';
