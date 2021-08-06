@@ -51,8 +51,10 @@ const Panel = ({ title, description, url, urlColor }) => {
           <Box
             sx={{
               '.url:hover &': {
-                opacity: '.4',
+                bg: urlColor,
+                opacity: '1',
               },
+              opacity: '.4',
             }}
             w="110%"
             h="10px"
