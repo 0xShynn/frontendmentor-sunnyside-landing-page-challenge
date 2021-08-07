@@ -24,6 +24,10 @@ const Header = () => {
       color="neutral.blue.300"
       fontWeight="bold"
       onClick={isOpen ? onClose : onOpen}
+      _hover={{
+        textDecoration: 'none',
+        color: 'neutral.blue.100',
+      }}
     >
       {children}
     </Link>
@@ -57,6 +61,7 @@ const Header = () => {
               bg="none"
               px="6"
               py="2"
+              transition="background-color .3s"
               borderRadius="3xl"
               _hover={{ textDecoration: 'none', bg: 'rgba(255, 255, 255, .3)' }}
             >
@@ -77,32 +82,41 @@ const Header = () => {
       </Flex>
       {isOpen ? (
         <Fade in={isOpen} offsetY={'20px'}>
-          <Flex direction={'column'} align={'flex-end'} mx="4">
-            <Box
-              w="25px"
-              h="25px"
-              bgGradient="linear(to-br, transparent 0%, transparent 50%, white 50%, white 100%)"
-              display={{ md: 'none' }}
-            />
-            <Box
-              bg={'white'}
-              p={10}
-              display={{ md: 'none' }}
-              w={['full', '80']}
-              boxShadow="2xl"
-            >
-              <VStack as="nav" spacing="6">
-                {NavLinks.map(link => (
-                  <NavLink key={link + Math.random()}>{link}</NavLink>
-                ))}
-                <ContactButton
-                  title="Contact"
-                  url="#"
-                  onClick={isOpen ? onClose : onOpen}
-                />
-              </VStack>
-            </Box>
-          </Flex>
+          <Box
+            bg="rgba(0,0,0, 0.3)"
+            h="100vh"
+            display={{ base: 'flex', md: 'none' }}
+            w="full"
+            onClick={isOpen ? onClose : onOpen}
+            justifyContent="flex-end"
+          >
+            <Flex direction={'column'} align={'flex-end'} mx="4">
+              <Box
+                w="25px"
+                h="25px"
+                bgGradient="linear(to-br, transparent 0%, transparent 50%, white 50%, white 100%)"
+                display={{ md: 'none' }}
+              />
+              <Box
+                bg={'white'}
+                p={10}
+                display={{ md: 'none' }}
+                w={['72', '80']}
+                boxShadow="2xl"
+              >
+                <VStack as="nav" spacing="6">
+                  {NavLinks.map(link => (
+                    <NavLink key={link + Math.random()}>{link}</NavLink>
+                  ))}
+                  <ContactButton
+                    title="Contact"
+                    url="#"
+                    onClick={isOpen ? onClose : onOpen}
+                  />
+                </VStack>
+              </Box>
+            </Flex>
+          </Box>
         </Fade>
       ) : null}
     </Box>

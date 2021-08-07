@@ -37,10 +37,10 @@ const Panel = ({ title, description, url, urlColor }) => {
           fontFamily="heading"
           fontSize="md"
           textTransform="uppercase"
-          textDecorationStyle="dotted"
           className="url"
           color="neutral.blue.100"
           href={url}
+          _hover={{ textDecoration: 'none' }}
         >
           <Box
             sx={{

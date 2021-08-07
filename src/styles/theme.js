@@ -12,6 +12,7 @@ const customTheme = extendTheme({
         bg: 'primary.sunnyGreen.100',
       },
       a: {
+        transition: 'background-color 3s, color 1s',
         _hover: {
           textDecoration: 'none',
         },
@@ -27,6 +28,7 @@ const customTheme = extendTheme({
       blue: '#3EBFFF',
       softRed: 'hsl(7, 99%, 70%)',
       yellow: 'hsl(51, 100%, 49%)',
+      yellow200: 'hsl(40, 100%, 50%)',
       sunnyGreen: {
         100: '#90D4C5',
         200: '#529687',

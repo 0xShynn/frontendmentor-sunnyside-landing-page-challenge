@@ -14,8 +14,8 @@ const ContactButton = ({ title, url, onClick }) => {
       textDecoration="none"
       _hover={{
         textDecoration: 'none',
-        bg: { base: 'red', md: 'rgba(255, 255, 255, .3)' },
-        color: 'white',
+        bg: { base: 'primary.yellow200', md: 'rgba(255, 255, 255, .3)' },
+        color: { base: 'black', md: 'white' },
       }}
       onClick={onClick}
     >
