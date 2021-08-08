@@ -11,7 +11,7 @@ const ContactButton = ({ title, url, onClick }) => {
       bg={{ base: 'primary.yellow', md: 'rgba(255, 255, 255, 1)' }}
       fontFamily="heading"
       color="black"
-      textDecoration="none"
+      textTransform="uppercase"
       _hover={{
         textDecoration: 'none',
         bg: { base: 'primary.yellow200', md: 'rgba(255, 255, 255, .3)' },
