@@ -48,7 +48,11 @@ const Header = () => {
         px={{ base: 4, md: 8, lg: 10 }}
         py={{ base: 4, md: 8, lg: 10 }}
       >
-        <Link w={{ base: '130px', md: '170px' }} href="#">
+        <Link
+          w={{ base: '130px', md: '170px' }}
+          href="#"
+          aria-label="Sunnyside logo"
+        >
           <SunnySideLogo color="white" />
         </Link>
 

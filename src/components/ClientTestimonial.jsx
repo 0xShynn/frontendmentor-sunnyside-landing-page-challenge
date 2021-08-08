@@ -16,6 +16,7 @@ const ClientTestimonial = ({ userImage, name, job, review }) => {
           boxSize="70px"
           mb={{ base: '8', lg: '14' }}
           mx="auto"
+          alt={`User picture of ${name}`}
         />
         <Text
           color="neutral.blue.200"

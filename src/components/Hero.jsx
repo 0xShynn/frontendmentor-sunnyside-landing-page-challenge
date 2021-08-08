@@ -50,6 +50,7 @@ const Hero = () => {
         width="30px"
         mt="16"
         animation={`${bounce} 3s infinite`}
+        alt="Icon arrow down"
       />
     </Flex>
   );

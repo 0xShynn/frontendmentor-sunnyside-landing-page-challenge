@@ -19,7 +19,7 @@ const Footer = () => {
       px="10"
       role="contentinfo"
     >
-      <Link w="160px" href="#" mb="10">
+      <Link w="160px" href="#" mb="10" aria-label="Sunnyside logo">
         <SunnySideLogo color="#2D7565" />
       </Link>
 
@@ -44,6 +44,7 @@ const Footer = () => {
             color="primary.sunnyGreen.300"
             _hover={{ color: 'white' }}
             role="link"
+            aria-label="Facebook logo"
           />
         </Link>
         <Link href="#">
@@ -53,6 +54,7 @@ const Footer = () => {
             color="primary.sunnyGreen.300"
             _hover={{ color: 'white' }}
             role="link"
+            aria-label="Instagram logo"
           />
         </Link>
         <Link href="#">
@@ -62,6 +64,7 @@ const Footer = () => {
             color="primary.sunnyGreen.300"
             _hover={{ color: 'white' }}
             role="link"
+            aria-label="Twitter logo"
           />
         </Link>
         <Link href="#">
@@ -71,6 +74,7 @@ const Footer = () => {
             color="primary.sunnyGreen.300"
             _hover={{ color: 'white' }}
             role="link"
+            aria-label="Pinteresst logo"
           />
         </Link>
       </HStack>
