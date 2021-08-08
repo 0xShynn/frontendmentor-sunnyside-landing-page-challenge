@@ -1,4 +1,4 @@
-import { Flex, HStack, Link, Icon } from '@chakra-ui/react';
+import { Flex, HStack, Link } from '@chakra-ui/react';
 import React from 'react';
 import SunnySideLogo from '../assets/svg/SunnySideLogo';
 import { NavLinks } from '../utils/NavLinks';
@@ -8,6 +8,7 @@ import {
   IoLogoPinterest,
   IoLogoInstagram,
 } from 'react-icons/io';
+import IconSocial from './IconSocial';
 
 const Footer = () => {
   return (
@@ -37,46 +38,10 @@ const Footer = () => {
       </HStack>
 
       <HStack spacing="6" mt="20" flexWrap="wrap">
-        <Link href="#">
-          <Icon
-            as={IoLogoFacebook}
-            boxSize="6"
-            color="primary.sunnyGreen.300"
-            _hover={{ color: 'white' }}
-            role="link"
-            aria-label="Facebook logo"
-          />
-        </Link>
-        <Link href="#">
-          <Icon
-            as={IoLogoInstagram}
-            boxSize="6"
-            color="primary.sunnyGreen.300"
-            _hover={{ color: 'white' }}
-            role="link"
-            aria-label="Instagram logo"
-          />
-        </Link>
-        <Link href="#">
-          <Icon
-            as={IoLogoTwitter}
-            boxSize="6"
-            color="primary.sunnyGreen.300"
-            _hover={{ color: 'white' }}
-            role="link"
-            aria-label="Twitter logo"
-          />
-        </Link>
-        <Link href="#">
-          <Icon
-            as={IoLogoPinterest}
-            boxSize="6"
-            color="primary.sunnyGreen.300"
-            _hover={{ color: 'white' }}
-            role="link"
-            aria-label="Pinteresst logo"
-          />
-        </Link>
+        <IconSocial iconName={IoLogoFacebook} label="Pinterest logo" url="#" />
+        <IconSocial iconName={IoLogoInstagram} label="Pinterest logo" url="#" />
+        <IconSocial iconName={IoLogoTwitter} label="Pinterest logo" url="#" />
+        <IconSocial iconName={IoLogoPinterest} label="Pinterest logo" url="#" />
       </HStack>
     </Flex>
   );
