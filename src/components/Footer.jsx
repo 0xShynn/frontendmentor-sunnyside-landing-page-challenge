@@ -9,6 +9,7 @@ import {
   IoLogoInstagram,
 } from 'react-icons/io';
 import IconSocial from './IconSocial';
+import AuthorBanner from './AuthorBanner';
 
 const Footer = () => {
   return (
@@ -37,12 +38,14 @@ const Footer = () => {
         ))}
       </HStack>
 
-      <HStack spacing="6" mt="20" flexWrap="wrap">
+      <HStack spacing="6" mt="20" flexWrap="wrap" mb="8">
         <IconSocial iconName={IoLogoFacebook} label="Pinterest logo" url="#" />
         <IconSocial iconName={IoLogoInstagram} label="Pinterest logo" url="#" />
         <IconSocial iconName={IoLogoTwitter} label="Pinterest logo" url="#" />
         <IconSocial iconName={IoLogoPinterest} label="Pinterest logo" url="#" />
       </HStack>
+
+      <AuthorBanner />
     </Flex>
   );
 };
